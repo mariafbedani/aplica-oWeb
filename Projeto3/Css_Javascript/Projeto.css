@@ -1,0 +1,66 @@
+﻿/* PROJETO WEB - ESTRUTURA DA MASTER PAGE */
+
+
+/* CABEÇALHO  */
+.cabecalho {
+    height: 81px; 
+    width: 100%;
+    /* permite que elementos tenham posições ABSOLUTAS dentro do cabeçalho */
+    position: relative;
+    background-color: #F0e5e5;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.logomarca {
+    margin-left: 20px;
+    width: 80px;
+    height: 80px;
+}
+
+.barra-titulo {
+    position: absolute;
+    top: 0;
+    left: 81px;
+    right: 0;
+    bottom: 40px;
+    padding-left: 80px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.barra-menu {
+    position: absolute;
+    left: 81px;
+    right: 0;
+    bottom: 0;
+    height: 40px;
+    padding-right: 10px;
+    text-align: right;
+}
+
+    .barra-menu a {
+        color: #36643f;
+        font-size: 15px;
+        margin-left: 4px;
+        margin-right: 4px;
+        padding-bottom: 2px;
+        text-decoration: none;
+    }
+
+        .barra-menu a:hover {
+            color: #1a341f;
+            border-bottom: 2px solid #1a341f;
+        }
+
+
+.conteudo {
+    min-height: 800px;
+}
+
+.rodape {
+    height: 400px;
+    background-color: #608567;
+    padding-left: 48px;
+    padding-top: 20px;
+}
+

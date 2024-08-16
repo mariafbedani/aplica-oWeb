@@ -1,0 +1,57 @@
+﻿ <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Projeto3.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Css_Javascript/StyleSheet.css" rel="stylesheet" />
+    <!-- StyleSheet.css contem as classes para diversos estilos mais genéricos -->
+    <link href="Css_Javascript/Projeto.css" rel="stylesheet" />
+    <!-- Projeto.css contem as classes para estruturar essa Master Page -->
+    <link href="Css_Javascript/flexslider.css" rel="stylesheet" />
+    <!-- Recurso para exibir slides -->
+    <script src="Css_Javascript/jquery-1.7.2.min.js"></script>
+    <script src="Css_Javascript/flexslider.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- CABEÇALHO -->
+        <div class="cabecalho content-wrap">
+            <!-- div da logo-->
+            <div class="logomarca">
+                <img class="logomarca" src="../Images/Design%20sem%20nome.png" />
+            </div>            <!-- barra título -->
+            <div class="barra-titulo">
+            </div>
+            <!-- menu -->
+            <div class="barra-menu">
+                <a href="../Default.aspx">Home </a>
+                <a href="../Sobre.aspx">Sobre </a>
+                <asp:HyperLink NavigateUrl="~/Cadastro.aspx" ID="CadastroAlunos" runat="server">Alunos </asp:HyperLink>
+                <asp:HyperLink NavigateUrl="~/Admin/ExibirUsuarios.aspx" ID="ExibirUsuarios" runat="server">Usuarios </asp:HyperLink>
+                <asp:HyperLink NavigateUrl="~/Admin/ExibirClientes.aspx" ID="ExibirClientes" runat="server">Clientes </asp:HyperLink>
+                <asp:HyperLink ID="Excecoes" Visible="false" NavigateUrl="~/Admin/Excecoes.aspx" runat="server">Excecoes </asp:HyperLink>
+                <asp:HyperLink NavigateUrl="~/Admin/ExibirTodosAcessos.aspx" ID="ExibirTodosAcessos" runat="server">Acessos </asp:HyperLink>
+                <a href="../FaleConosco.aspx">Fale Conosco</a>
+                <asp:HyperLink ID="Login" Visible="true" NavigateUrl="~/Login.aspx" runat="server">Entrar</asp:HyperLink>
+                <asp:LinkButton ID="Logout" Visible="false" OnClick="Logout_Click" runat="server">Sair</asp:LinkButton>
+            </div>
+        </div>
+        <!-- CONTEÚDO -->
+        <div class="conteudo content-wrap">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- RODAPÉ -->
+        <div class="rodape content-wrap">
+            <div class:"content-wrap">
+                
+            </div>
+        </div>
+    </form>
+</body>
+</html>

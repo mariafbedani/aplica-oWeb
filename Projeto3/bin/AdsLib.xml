@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AdsLib</name>
+    </assembly>
+    <members>
+        <member name="T:AdsLib.TratamentoExcecoes">
+            <summary>
+            Esta classe permite o tratamento das exceções ocorridas no projeto
+            </summary>
+        </member>
+        <member name="P:AdsLib.TratamentoExcecoes.NomeArquivo">
+            <summary>
+            Obtem ou define o nome do arquivo que contém as exceções.
+            </summary>
+        </member>
+        <member name="M:AdsLib.TratamentoExcecoes.GravarExcecoes(System.Exception)">
+            <summary>
+            Grava no arquivo "LogExcecoes.txt" os dados gerados pela exceção
+            </summary>
+            <param name="ex">Recebe a classe Excecption</param>
+        </member>
+        <member name="M:AdsLib.TratamentoExcecoes.LerExcecoes">
+            <summary>
+            Recupera os dados do arquivo "LogExcecoes.txt"
+            </summary>
+            <returns>Dados do arquivo LogExcecoes.txt</returns>
+        </member>
+    </members>
+</doc>
